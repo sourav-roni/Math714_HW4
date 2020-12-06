@@ -6,7 +6,7 @@ h = 1/(N+1);
 del_t = 0.1*h;
 Xs = 0:h:1;
 % Time horizon
-T_horizon = 0.2;
+T_horizon = 1.0;
 Ts = 0:del_t:T_horizon;
 n_iters = size(Ts);
 n_iters = n_iters(2);
@@ -30,5 +30,5 @@ end
 for i=1:n_iters
     plot(Xs,U(:,i))
     ylim([-2,3])
-    pause(0.01)
+    pause(0.02)
 end
